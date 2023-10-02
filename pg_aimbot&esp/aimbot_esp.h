@@ -150,6 +150,10 @@ void PlayerMoveC$update(void* obj){
                             invert the rotation (-) since positive rot means rotating downwards(pitch) or right(yaw) */ 
                             Transform$rotate(baseCamTransform, -(deltaPitch), 0.f, 0.f);
                             Transform$rotate(myTransform, 0.f, -(deltaYaw-90.0f), 0.f); // -90 so 0 degrees corresponds to z axis(forward!) do NOT change
+                            /*Small add:OR you can change the way i calculate deltaYaw by swapping vec.Z with
+                            vec.X that way Z is adjacent and X is opposite, that way subtracting 90 from 
+                            yaw will not be needed since we treat Z as forward in our calculation! ill
+                            keep it like this tho to make you understand the concepts : ) */
                         }
                     }
 
