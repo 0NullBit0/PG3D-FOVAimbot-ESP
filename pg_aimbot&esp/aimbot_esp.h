@@ -138,7 +138,7 @@ void PlayerMoveC$update(void* obj){
 
                         float screenX = (float )glWidth-((float)glWidth- enemyScreenPosition.X);
                         float screenY = ((float)glHeight - enemyScreenPosition.Y);
-                        screenDistance2Middle = sqrt(pow((screenX-(glWidth/2)),2) + pow((screenY-(glHeight/2)),2));
+                        float screenDistance2Middle = sqrt(pow((screenX-(glWidth/2)),2) + pow((screenY-(glHeight/2)),2));
 
                         if(screenDistance2Middle <= fovCircleRadius && enemyScreenPosition.Z >= 1){
                             /*here we rotate basecamtrans for pitch and our trans for yaw
