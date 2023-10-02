@@ -1,5 +1,8 @@
 #include <cmath>
 #include <iostream>
+#include "Quaternion.h"
+#include "Unity.h"
+#include "Vector3.h"
 /**/
 //Software designed by nullBit 
 /**/
